@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+    <title>User,Fund,and Asset Management</title>
+	<link rel="stylesheet" href="stylesheet/gresbapidocs.css">
+  </head>
+  <body>
+	<nav>
+		<a href="gresbapidocs.html" class=return> Index </a>
+	</nav>
+	<header>User, Fund, and Asset Management</header>
+	<p class=centeredText>The GRESB API is a three tiered process.  You must create an account, add funds to the account, and add asset level data to the fund.  One account can be associated with multiple funds.  The API commands are based off of the <a class="linkStandard" href="intro.html">HTTP methods</a> outlined by REST protocol </p>
+	<br></br>
+	<div class="subHead">User Commands: 	
+		<p class="commands"> <span class=commandText>POST /user</span> - Creates a new user account <br></br> <span class=commandText>GET /user</span> -Returns information about your account <br></br> <span class=commandText>PUT /user</span> -Updates your account information</p>
+	</div>
+	
+	<div class="subHead" id=fundHead>Fund Commands: 	
+		<p class="commands"> <span class=commandText>POST /company_funds</span> - Creates a new fund associated with a user account.  You must already be connected as a user.  One user account may be associated with multiple funds<br></br> <span class=commandText>GET /company_funds</span> -Returns information about your fund <br></br> <span class=commandText>PUT /company_funds</span> -Updates your fund's information.<br></br> <span class=commandText>DELETE /company_funds</span> -Deletes a fund.  The fund must be associated with your account</p>
+	</div>
+	<div class="subHead" id=assetHead>Asset Commands:</div>
+	<div class="subHead" id=dataHead>Data Commands:</div>
+		
+  </body>
+</html>

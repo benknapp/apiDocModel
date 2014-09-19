@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="stylesheet/gresbapidocs.css">
+    <title>
+		Error Codes and Responses
+	</title>
+</script >
+  </head>
+  <body>
+		<nav>
+		<a href="gresbapidocs.html" class=return>Index</a>
+		</nav>
+		<header>
+			Errors and Status Codes
+		</header>
+		<p class=centeredText>
+			GRESB uses HTTP response codes to indicate success or failure of an API request. Generally, codes in the 200s indicate success, codes in the 400s indicate a users side error, and codes in the 500s indicate an error with GRESB's servers.
+		</p>
+		<br><br/>
+		<table>
+			<tr class="topRow">
+				<th class="changelogCell">Code</th>
+				<th class="changelogCell">Text</th >
+				<th class="description">Description</th>
+			</tr >
+			<tr>
+				<td>200</td>
+				<td>OK</td>
+				<td>Command was a success</td>
+			</tr> 
+			<tr>
+				<td>400</td>
+				<td>Bad Request</td>
+				<td>The request was invalid, often there is a missing parameter. 
+				An accompying error message with further information may be provided</td>
+			</tr>
+			<tr>
+				<td>401</td>
+				<td>Unauthorized</td>
+				<td>Authentication credentials were missing or invalid.  See <a href="auth.html", class="linkStandard">authorization</a> 
+					for more assistance</td>
+			</tr>
+			<tr>
+				<td>403</td>
+				<td>Forbidden</td>
+				<td>The request was refused because your account did not recieve permission to complete this action,
+				or your access was restricted due to <a href="usage.html", class="linkStandard">usage limits</a></td>
+			</tr>
+			<tr>
+				<td>404</td>
+				<td>Not Found</td> 
+				<td>The requested item does not exist</td>
+			</tr>
+			<tr>
+				<td>500, 502, 504</td>
+				<td>Serverside Error</td>
+				<td>An error has occured on our servers.  Please wait a few minutes and try again</td>
+			</tr>
+		</table>
+  </body>
+</html>

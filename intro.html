@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="stylesheet/gresbapidocs.css">
+    <title>Introduction</title>
+  </head>
+  <body>
+	<nav>
+		<a href="gresbapidocs.html" class=return> Index </a>
+	</nav>
+	<header>Introduction</header>
+	<p class="centeredText"> GRESB now offers an Application Programming Interface (API) web service to facilitate the entry of asset level data in the GRESB survey.  This service enables the direct transfer of of asset level data between your asset management system database and the GRESB survey.  The API complies with REST protocol; it will use HTTP response codes to indicate error and will respond to the HTTP commands listed below.  All responses will be returned in (?JSON XML? RSS?).  Furthermore, all actions through GRESB's API must be authorized using <a href="http://oauth.net/" class="hiddenLink">OAuth 2.0</a>.  See <a href="auth.html" class="linkStandard">authorization</a> for further assistance. <span class="question">?Playground/Test Mode?</span>  
+	Methods
+	<p class="centeredText">GRESB strives to keep all funds’ asset level data consistent, whether the data is received through the API, the asset-level upload sheet, or through the front end.  For this reason, it is important that your asset management system is formatted to comply with GRESB’s asset level data <a href=# class="linkStandard">requirements</a>. </p>
+	
+	<p class="centeredText">-------------------------------------------------------------------------------------------------------------------------------------------</p>
+	<br></br>
+	<p class="centeredText" id="tableText">The GRESB API uses four basic HTTP verbs, each of which communicate a client request to the GRESB servers</p>
+	<br></br>
+	<table id="commandTable">
+		<tr>
+			<th class="methodCell">Methods:</th></th>
+		</tr>
+		<tr>
+			<th class="changelogCell">POST</th>
+			<td>This method creates an item </td>
+		</tr>
+		<tr>
+			<th class="changelogCell">GET</th>
+			<td>This method reads an item</td>
+		</tr>
+		<tr>
+			<th class="changelogCell">PUT</th>
+			<td>This method updates an item</td>
+		<tr>
+		</tr>
+			<th class="changelogCell">DELETE</th>
+			<td>This item deletes an item.  (Doesn't apply to /user)</td>
+		</tr>
+	</table  >
+  </body>
+</html>
